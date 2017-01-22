@@ -22,7 +22,7 @@ def welcome_applicants():
     return render_template("index.html", positions=positions)
 
 
-@app.route("/apply")
+@app.route("/application-form")
 def receive_application():
     """display application form and receive applicants input.
     """
