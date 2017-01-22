@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Application Form{% endblock %}
+
+{% block content %}
+  <h1>Application Form</h1>
+  <div class="instructions">
+    <p>We are always looking for talented melon heads! Please submit the form below to apply at the best company EVAH!!!</p>
+    <p>Please fill out all fields before submitting. Enter your first and last name, your salary requirement (please enter numbers only), and from the given drop down list, select your desired position at Ubermelon.</p>
+  </div>
+<br>
+  <form action="/application-success" method="POST">
+    <label for="firstname">First Name:</label> 
+    <input type=text name="firstname" id="firstname"> <br>
+    <label for="lastname">Last Name:</label> 
+    <input type=text name="lastname" id="lastname"> <br>
+    <label for="salaryrequirement">Salary Requirement: </label>
+    <input type=text name="salaryreq" id="salaryrequirement"><br>
+    <label for="positionapp">Position: </label>
+    <select name="positionapp" id="positionapp">
+      {% for position in positions %}
+      <option value="{{ position }}">{{ position }}</option>
+      {% endfor %}
+    </select><br><br>
+
+    <input type=Submit value="Submit Application"> 
+  </form>
+{% endblock %}
+

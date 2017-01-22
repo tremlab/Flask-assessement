@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Welcome Applicants{% endblock %}
+
+{% block content %}
+  <h1>Available Positions</h1>
+    <ul>
+        {% for position in positions %}
+          <li>{{ position }}</li>
+        {% endfor %}
+        <br>
+        <br>
+    </ul>
+<p><a href="/apply">click HERE to apply!</a></p>
+
+<img src="./static/melonhappy.jpg"
+
+{% endblock %}

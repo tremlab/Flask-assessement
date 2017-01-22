@@ -1,0 +1,49 @@
+
+.instructions {
+    border: 10px solid #FAE65F;
+    padding: 15px;
+}
+
+input {
+    background-color: #FCDB00;
+}
+
+#lastname {
+    font-weight: bold;
+
+}
+
+form {
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 2em;
+    color: #226E87;
+}
+
+body {
+    background-color: #B2BCBF;
+}
+
+p {
+    font-family: sans-serif;
+    color: #226E87;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 4ems;
+    color: darkblue;
+    display: inline-block;
+    background-color: white;
+}
+
+h1 img {
+    width: 100px;
+    border: 10px solid #FAE65F;
+}
+
+li {
+    font-family: sans-serif;
+    color: #226E87;
+    font-size: 2em;
+}
